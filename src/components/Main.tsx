@@ -1,10 +1,20 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+const pic01 = '../images/pic01.jpg'
+const pic02 = '../images/pic02.jpg'
+const pic03 = '../images/pic03.jpg'
 
-class Main extends React.Component {
+
+interface MainProps{
+  route: object,
+  article: string,
+  articleTimeout: boolean,
+  onCloseArticle: () => {},
+  timeout: boolean,
+  setWrapperRef: () => {},
+}
+
+export default class Main extends React.Component<MainProps> {
   render() {
     let close = (
       <div
@@ -126,7 +136,7 @@ class Main extends React.Component {
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
+              <textarea name="message" id="message" rows={4}></textarea>
             </div>
             <ul className="actions">
               <li>
@@ -171,14 +181,3 @@ class Main extends React.Component {
     )
   }
 }
-
-Main.propTypes = {
-  route: PropTypes.object,
-  article: PropTypes.string,
-  articleTimeout: PropTypes.bool,
-  onCloseArticle: PropTypes.func,
-  timeout: PropTypes.bool,
-  setWrapperRef: PropTypes.func.isRequired,
-}
-
-export default Main
