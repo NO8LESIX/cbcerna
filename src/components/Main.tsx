@@ -31,6 +31,7 @@ export default class Main extends React.Component<MainProps> {
         id="main"
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
+        {/* Intro */}
         <article
           id="intro"
           className={`${this.props.article === 'intro' ? 'active' : ''} ${
@@ -64,7 +65,7 @@ export default class Main extends React.Component<MainProps> {
           </p>
           {close}
         </article>
-
+        {/* Work */}
         <article
           id="work"
           className={`${this.props.article === 'work' ? 'active' : ''} ${
@@ -93,7 +94,7 @@ export default class Main extends React.Component<MainProps> {
           </p>
           {close}
         </article>
-
+        {/* About */}
         <article
           id="about"
           className={`${this.props.article === 'about' ? 'active' : ''} ${
@@ -116,7 +117,7 @@ export default class Main extends React.Component<MainProps> {
           </p>
           {close}
         </article>
-
+        {/* Contact */}
         <article
           id="contact"
           className={`${this.props.article === 'contact' ? 'active' : ''} ${
