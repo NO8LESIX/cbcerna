@@ -82,11 +82,12 @@ export default class Main extends React.Component<MainProps> {
             Once I started my studies at KSU, I took some time to explore
             research opportunites within the University. Turns out I had a
             strong interest in the field of biology and ended up working for two
-            labs on campus. I also
+            labs on campus. I also was a teaching assistant for the following course 
+            CIS 300 Data and Program Structures.
           </p>
           <p>
             I also do a bunch of web work around React, Node.js, JS, TS, C# and
-            MSSQL. If you notice, this website was built using a template.
+            MSSQL. If you notice, this website was built using a template. 
             <br />
             (CSS is somthing I am still working on improving on, hence the
             template.)
