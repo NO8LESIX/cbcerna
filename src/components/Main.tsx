@@ -1,5 +1,7 @@
 import React from 'react'
+// @ts-ignore */
 import pic02 from '../static/pic02.jpg'
+// @ts-ignore */
 import coral from '../static/coral.jpg'
 
 interface MainProps {
