@@ -42,10 +42,19 @@ export default class Header extends React.Component<HeaderProps> {
             <li>
               <button
                 onClick={() => {
-                  this.props.onOpenArticle('about')
+                  this.props.onOpenArticle('projects')
                 }}
               >
-                About
+                Projects
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => {
+                  this.props.onOpenArticle('resume')
+                }}
+              >
+                Resume
               </button>
             </li>
             <li>

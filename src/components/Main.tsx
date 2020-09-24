@@ -1,17 +1,14 @@
-import PropTypes from 'prop-types'
 import React from 'react'
-const pic01 = '../images/pic01.jpg'
-const pic02 = '../images/pic02.jpg'
-const pic03 = '../images/pic03.jpg'
+import pic02 from '../static/pic02.jpg'
+import coral from '../static/coral.jpg'
 
-
-interface MainProps{
-  route: object,
-  article: string,
-  articleTimeout: boolean,
-  onCloseArticle: () => {},
-  timeout: boolean,
-  setWrapperRef: () => {},
+interface MainProps {
+  route: object
+  article: string
+  articleTimeout: boolean
+  onCloseArticle: () => {}
+  timeout: boolean
+  setWrapperRef: () => {}
 }
 
 export default class Main extends React.Component<MainProps> {
@@ -39,29 +36,24 @@ export default class Main extends React.Component<MainProps> {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">About Me</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img src={coral} alt="Image Unavaliable" />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            Hiya! My name is Carlos and I am a student at Kansas State
+            University pursing a B.S. in Computer Science. Been a resident of
+            Kansas for about 21 years. My main focus during my education has
+            been designing and developing software to make life easier for those
+            around me. This mostly includes automating systems to assist me in
+            keeping my home and work life running smoothly and seamlessly.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            If this link hasn't been broken yet due to a deployment issue, you
+            can check out my work <a href="#work">here</a>.
+          </p>
+          <p>
+            <i>*smoothly and seeamlessly sold seperately</i>
           </p>
           {close}
         </article>
@@ -78,43 +70,73 @@ export default class Main extends React.Component<MainProps> {
             <img src={pic02} alt="" />
           </span>
           <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
+            I started working as a general laborer right before begining my
+            studies at Kansas State University. The diverse cast of individuals
+            I had the pleasure to work with taught me a lot about hard work,
+            communication, and being prepared alter my work to meet client
+            needs.
           </p>
           <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
+            Once I started my studies at KSU, I took some time to explore
+            research opportunites within the University. Turns out I had a
+            strong interest in the field of biology and ended up working for two
+            labs on campus. I also
+          </p>
+          <p>
+            I also do a bunch of web work around React, Node.js, JS, TS, C# and
+            MSSQL. If you notice, this website was built using a template.
+            <br />
+            (CSS is somthing I am still working on improving on, hence the
+            template.)
           </p>
           {close}
         </article>
-        {/* About */}
+        {/* Projects */}
         <article
-          id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
+          id="projects"
+          className={`${this.props.article === 'projects' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">About</h2>
-          <span className="image main">
-            <img src={pic03} alt="" />
-          </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
-          </p>
+          <h2 className="major">Personal Projects</h2>
+          <ul>
+            <li>
+              <b>C.A.R.M.E.N.</b>
+              <br />
+              <i>Pronunciation: /kär-men/</i>
+              <br />A Communications Assistant for Reading Messages Events and
+              Notifications
+            </li>
+            <br />
+            <li>
+              <b>H.A.I.</b>
+              <br />
+              <i>Pronunciation: /hī/</i>
+              <br />
+              Home Automation Interface built for use with RaspberryPi
+            </li>
+            <br />
+            <li>
+              <b>Text-to-Scratch</b>
+              <br />
+              A plugin for scratch that allows for text input to generate and
+              assemble code blocks.
+            </li>
+            <br />
+          </ul>
+          {close}
+        </article>
+        {/* Resume */}
+        <article
+          id="resume"
+          className={`${this.props.article === 'resume' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Resume</h2>
+          <p><i>*Link unavaliable for now, check back soon!</i></p>
           {close}
         </article>
         {/* Contact */}
@@ -150,32 +172,19 @@ export default class Main extends React.Component<MainProps> {
           </form>
           <ul className="icons">
             <li>
-              <a
-                href="https://twitter.com/HuntaroSan"
-                className="icon fa-twitter"
-              >
-                <span className="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
-                className="icon fa-github"
-              >
+              <a href="https://github.com/NO8LESIX" className="icon fa-github">
                 <span className="label">GitHub</span>
               </a>
             </li>
           </ul>
+          <p>
+            Email: cbcerna@gmail.com
+            <br />
+            Phone: (913) 486-9364
+          </p>
+          <i>
+            * contact feature under development and may not work as intended
+          </i>
           {close}
         </article>
       </div>
