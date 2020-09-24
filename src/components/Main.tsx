@@ -1,4 +1,6 @@
 import React from 'react'
+import pic02 from '../static/pic02.jpg'
+import coral from '../static/coral.jpg'
 
 interface MainProps {
   route: object
@@ -20,9 +22,6 @@ export default class Main extends React.Component<MainProps> {
       ></div>
     )
 
-    const pic02 = '../static/pic02.jpg'
-    const coral = '../static/coral.jpg'
-    
     return (
       <div
         ref={this.props.setWrapperRef}
@@ -120,8 +119,9 @@ export default class Main extends React.Component<MainProps> {
             <br />
             <li>
               <b>Text-to-Scratch</b>
-              <br />A plugin for scratch that allows for text input to generate
-              and assemble code blocks.
+              <br />
+              A plugin for scratch that allows for text input to generate and
+              assemble code blocks.
             </li>
             <br />
           </ul>
@@ -136,9 +136,7 @@ export default class Main extends React.Component<MainProps> {
           style={{ display: 'none' }}
         >
           <h2 className="major">Resume</h2>
-          <p>
-            <i>*Link unavaliable for now, check back soon!</i>
-          </p>
+          <p><i>*Link unavaliable for now, check back soon!</i></p>
           {close}
         </article>
         {/* Contact */}
