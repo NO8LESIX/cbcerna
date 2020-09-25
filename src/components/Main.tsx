@@ -86,7 +86,7 @@ export default class Main extends React.Component<MainProps> {
             CIS 300 Data and Program Structures.
           </p>
           <p>
-            I also do a bunch of web work around React, Node.js, JS, TS, C# and
+            I also do a bunch of web work around React, Node.js, JS, TS, C#, Python and
             MSSQL. If you notice, this website was built using a template. 
             <br />
             (CSS is somthing I am still working on improving on, hence the
@@ -108,8 +108,8 @@ export default class Main extends React.Component<MainProps> {
               <b>C.A.R.M.E.N.</b>
               <br />
               <i>Pronunciation: /kär-men/</i>
-              <br />A Communications Assistant for Reading Messages Events and
-              Notifications
+              <br />A Discord communications assistant for reading messages, events and
+              notifications
             </li>
             <br />
             <li>
@@ -117,13 +117,13 @@ export default class Main extends React.Component<MainProps> {
               <br />
               <i>Pronunciation: /hī/</i>
               <br />
-              Home Automation Interface built for use with RaspberryPi
+              Home automation interface built for use with RaspberryPi
             </li>
             <br />
             <li>
               <b>Text-to-Scratch</b>
               <br />
-              A plugin for scratch that allows for text input to generate and
+              A plugin for Scratch that allows for text input to generate and
               assemble code blocks.
             </li>
             <br />
@@ -151,14 +151,14 @@ export default class Main extends React.Component<MainProps> {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <form method="post" action="https://www.flexyform.com/f/07eeccd988b21580f8b50d097f037cae5ce909e6">
             <div className="field half first">
               <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
+              <input type="text" name="fullname" id="name" />
             </div>
             <div className="field half">
               <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
+              <input type="text" name="replyto" id="email" />
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>
@@ -185,9 +185,6 @@ export default class Main extends React.Component<MainProps> {
             <br />
             Phone: (913) 486-9364
           </p>
-          <i>
-            * contact feature under development and may not work as intended
-          </i>
           {close}
         </article>
       </div>
