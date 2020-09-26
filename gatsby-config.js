@@ -1,6 +1,11 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: 'Cbcerna',
+    siteUrl: `https://no8lesix.github.io/cbcerna`,
     author: 'Carlos B. Cerna',
     description: 'Personal Portfolio of Work',
   },

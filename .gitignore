@@ -9,3 +9,5 @@ yarn-error.log
 
 #dev keys
 .env
+.env.development
+.env.production
