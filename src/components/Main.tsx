@@ -82,12 +82,13 @@ export default class Main extends React.Component<MainProps> {
             Once I started my studies at KSU, I took some time to explore
             research opportunites within the University. Turns out I had a
             strong interest in the field of biology and ended up working for two
-            labs on campus. I also was a teaching assistant for the following course 
-            CIS 300 Data and Program Structures.
+            labs on campus. I also was a teaching assistant for the following
+            course CIS 300 Data and Program Structures.
           </p>
           <p>
-            I also do a bunch of web work around React, Node.js, JS, TS, C#, Python and
-            MSSQL. If you notice, this website was built using a template. 
+            I also do a bunch of web work around React, Node.js, JS, TS, C#,
+            Python and MSSQL. If you notice, this website was built using a
+            template.
             <br />
             (CSS is somthing I am still working on improving on, hence the
             template.)
@@ -105,15 +106,22 @@ export default class Main extends React.Component<MainProps> {
           <h2 className="major">Personal Projects</h2>
           <ul>
             <li>
-              <b>C.A.R.M.E.N.</b>
+              <a
+                href="https://github.com/NO8LESIX/Carmen-Bot"
+                className="icon fa-github"
+              >
+                <b> C.A.R.M.E.N.</b>
+              </a>
               <br />
               <i>Pronunciation: /kär-men/</i>
-              <br />A Discord communications assistant for reading messages, events and
-              notifications
+              <br />A Discord communications assistant for reading messages,
+              events and notifications
             </li>
             <br />
             <li>
-              <b>H.A.I.</b>
+              <a href="https://no8lesix.github.io/cbcerna/" className="icon fa-github">
+                <b> H.A.I.</b>
+              </a>
               <br />
               <i>Pronunciation: /hī/</i>
               <br />
@@ -121,10 +129,50 @@ export default class Main extends React.Component<MainProps> {
             </li>
             <br />
             <li>
-              <b>Text-to-Scratch</b>
+              <a href="https://no8lesix.github.io/cbcerna/" className="icon fa-github">
+                <span className="label">GitHub</span>
+                <b> Text-to-Scratch</b>
+              </a>
+              <br />A plugin for Scratch that allows for text input to generate
+              and assemble code blocks.
+            </li>
+            <br />
+            <li>
+              <a
+                href="https://github.com/NO8LESIX/KDA-React-Prototype"
+                className="icon fa-github"
+              >
+                <span className="label">GitHub</span>
+                <b>
+                  {' '}
+                  Kansas Department of Agriculture: Regulations Information Site
+                </b>
+              </a>
+              <br />A demo website produced by a small team consiting of myself
+              and 5 other students from Kansas State University. The website is
+              done with React, TS, and React Router. Little bits of other
+              languages in here as well. My primary work revolved around
+              integrating React-Router for our page navigation, managing pull
+              requests, and cordinating the team's tasks so we could meet our
+              deadlines.
+            </li>
+            <br />
+            <li>
+              <a
+                href="https://github.com/NO8LESIX/cbcerna"
+                className="icon fa-github"
+              >
+                <span className="label">GitHub</span>
+                <b> Personal Portfolio Website</b>
+              </a>
               <br />
-              A plugin for Scratch that allows for text input to generate and
-              assemble code blocks.
+              Built from a Gatsby Template. This is where I display my projects,
+              contact portal, and other stuff. I add new features every once in
+              a while to discover how to integrate or improve my coding
+              knowledge. TL;DR: It's where I do the code-y things and try to
+              work out the kinks before I do things elsewhere. Always taking
+              suggestions to improve my site. Feel free to contact me with
+              things that might be useful to add!
             </li>
             <br />
           </ul>
@@ -139,7 +187,9 @@ export default class Main extends React.Component<MainProps> {
           style={{ display: 'none' }}
         >
           <h2 className="major">Resume</h2>
-          <p><i>*Link unavaliable for now, check back soon!</i></p>
+          <p>
+            <i>*Link unavaliable for now, check back soon!</i>
+          </p>
           {close}
         </article>
         {/* Contact */}
@@ -151,7 +201,10 @@ export default class Main extends React.Component<MainProps> {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="https://www.flexyform.com/f/07eeccd988b21580f8b50d097f037cae5ce909e6">
+          <form
+            method="post"
+            action="https://www.flexyform.com/f/07eeccd988b21580f8b50d097f037cae5ce909e6"
+          >
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="fullname" id="name" />
