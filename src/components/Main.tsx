@@ -3,6 +3,8 @@ import React from 'react'
 import pic02 from '../static/pic02.jpg'
 // @ts-ignore */
 import coral from '../static/coral.jpg'
+// @ts-ignore */
+import Pdf from '../static/Carlos_Cerna_Resume.pdf'
 
 interface MainProps {
   route: object
@@ -11,6 +13,7 @@ interface MainProps {
   onCloseArticle: () => {}
   timeout: boolean
   setWrapperRef: () => {}
+  resume: string
 }
 
 export default class Main extends React.Component<MainProps> {
@@ -23,6 +26,12 @@ export default class Main extends React.Component<MainProps> {
         }}
       ></div>
     )
+
+    const onPrint = (
+      event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+    ) => {
+      document.location.href = Pdf;
+    }
 
     return (
       <div
@@ -119,7 +128,10 @@ export default class Main extends React.Component<MainProps> {
             </li>
             <br />
             <li>
-              <a href="https://no8lesix.github.io/cbcerna/" className="icon fa-github">
+              <a
+                href="https://no8lesix.github.io/cbcerna/"
+                className="icon fa-github"
+              >
                 <b> H.A.I.</b>
               </a>
               <br />
@@ -129,7 +141,10 @@ export default class Main extends React.Component<MainProps> {
             </li>
             <br />
             <li>
-              <a href="https://no8lesix.github.io/cbcerna/" className="icon fa-github">
+              <a
+                href="https://no8lesix.github.io/cbcerna/"
+                className="icon fa-github"
+              >
                 <span className="label">GitHub</span>
                 <b> Text-to-Scratch</b>
               </a>
@@ -187,9 +202,9 @@ export default class Main extends React.Component<MainProps> {
           style={{ display: 'none' }}
         >
           <h2 className="major">Resume</h2>
-          <p>
-            <i>*Link unavaliable for now, check back soon!</i>
-          </p>
+          <div>
+            <button onClick={event => onPrint(event)}>Download / Print PDF</button>
+          </div>
           {close}
         </article>
         {/* Contact */}
