@@ -38,7 +38,7 @@ const Layout = ({ children, location }) => {
     //   `}
     //   render={data => (
     //     <>
-    //       {/* <Helmet
+    //       <Helmet
     //         title={data.site.siteMetadata.title}
     //         meta={[
     //           { name: 'description', content: 'Sample' },
@@ -46,12 +46,12 @@ const Layout = ({ children, location }) => {
     //         ]}
     //       >
     //         <html lang="en" />
-    //       </Helmet> */}
+    //       </Helmet>
     //       {content}
     //     </>
     //   )}
-    // />
-    content
+    //  />
+     content
   )
 }
 
