@@ -30,7 +30,7 @@ export default class Main extends React.Component<MainProps> {
     const onPrint = (
       event: React.MouseEvent<HTMLButtonElement, MouseEvent>
     ) => {
-      document.location.href = Pdf;
+      document.location.href = Pdf
     }
 
     return (
@@ -91,16 +91,21 @@ export default class Main extends React.Component<MainProps> {
             Once I started my studies at KSU, I took some time to explore
             research opportunites within the University. Turns out I had a
             strong interest in the field of biology and ended up working for two
-            labs on campus. I also was a teaching assistant for the following
-            course CIS 300 Data and Program Structures.
+            labs on campus.
           </p>
           <p>
-            I also do a bunch of web work around React, Node.js, JS, TS, C#,
-            Python and MSSQL. If you notice, this website was built using a
-            template.
+            It wasn't until I joined Buildertrend that I really began to dive
+            into web work. My time there introduced me to React and what a
+            wonderful framework this is to work with!
+          </p>
+          <p>
+            I also do a bunch of web work around React, Node.js, JS, TS, C#, and
+            MSSQL now thanks to my internship at Buildertrend. Quick shout out
+            to Daric Teske and Vincent Nguyen. Although, I still have a lot of
+            work to do in order to imporove my styling abilities.
             <br />
             (CSS is somthing I am still working on improving on, hence the
-            template.)
+            template. If you notice, this website was built using a template.)
           </p>
           {close}
         </article>
@@ -203,7 +208,9 @@ export default class Main extends React.Component<MainProps> {
         >
           <h2 className="major">Resume</h2>
           <div>
-            <button onClick={event => onPrint(event)}>Download / Print PDF</button>
+            <button onClick={(event) => onPrint(event)}>
+              Download / Print PDF
+            </button>
           </div>
           {close}
         </article>
