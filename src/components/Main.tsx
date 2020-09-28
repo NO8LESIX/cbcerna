@@ -103,9 +103,12 @@ export default class Main extends React.Component<MainProps> {
             MSSQL now thanks to my internship at Buildertrend. Quick shout out
             to Daric Teske and Vincent Nguyen. Although, I still have a lot of
             work to do in order to imporove my styling abilities.
-            <br />
-            (CSS is somthing I am still working on improving on, hence the
-            template. If you notice, this website was built using a template.)
+          </p>
+          <p>
+            <i>
+              (CSS is somthing I am still working on improving on, hence the
+              template. If you notice, this website was built using a template.)
+            </i>
           </p>
           {close}
         </article>
